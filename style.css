@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'kumbh Sans', sans-serif;
+    color: hsl(0, 11%, 12%);
+}
+
+
+section {
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card {
+    width: 365px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 5px 15px 5px hsl(229, 23%, 23%, 0.1);
+
+}
+
+.cardTop{
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+    
+}
+
+.cardBody {
+    padding: 0 30px 25px;
+    
+}
+
+.img-holder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -50px auto 30px auto;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.age, .city, .items {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%)
+
+}
+
+.name-age, .stats {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.name-age {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.age {
+    margin-left: 6px;
+    font-size: 1rem;
+}
+
+.city {
+    font-size: 0.85rem;
+}
+
+.cardBottom {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    padding: 0px 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+.cardBottom .stats {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.items {
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    padding-top: 7px;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+    color: hsl(229, 23%, 23%);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.attribution a { 
+    color: hsl(0, 0%, 100%); 
+}
+
+
+    /* bg circle*/
+
+    .pattern .bg-top {
+        position: absolute;
+        top: -450px;
+        left: -350px;
+        transform: translate(-100px,-50px);
+        animation: 2s pattern forwards;
+    
+
+    }
+
+    .pattern .bg-bottom {
+        position: absolute;
+        bottom: -650px;
+        right: -250px;
+        transform: translate(100px,50px);
+        animation: 2s pattern forwards;
+       
+        
+
+    }
+
+    @keyframes pattern{
+
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+
